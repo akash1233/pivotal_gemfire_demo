@@ -8,12 +8,10 @@ public interface PersonRepo extends CrudRepository<PersonEntity, String> {
     PersonEntity findByName(String name);
 
     @Trace
-    Iterable<PersonEntity> findByHealthrecordGreaterThan(int healthrecord);
+    Iterable<PersonEntity> findByHealthrecord();
 
     @Trace
     Iterable<PersonEntity> findByHealthrecordLessThan(int healthrecord);
 
-//    @Trace
-//    Iterable<PersonEntity> findByHealthrecordonRangeBetween(int greaterThanAge, int lessThanAge);
 
 }
