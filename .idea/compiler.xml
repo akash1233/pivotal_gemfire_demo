@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pivotal-gemfire-demo" />
         <module name="pivotal_tutorial" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="pivotal-gemfire-demo" target="1.8" />
       <module name="pivotal_tutorial" target="1.8" />
     </bytecodeTargetLevel>
   </component>

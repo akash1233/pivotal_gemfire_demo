@@ -20,7 +20,6 @@ public class SpringController {
     @Autowired
     PersonRepo personRepository;
 
-
     @GetMapping("/healthrecord")
     public Iterable<PersonEntity> findByHealthrecordGreaterThan(@RequestParam(required = false, defaultValue = "1000") int number) {
         Iterable<PersonEntity> values = personRepository.findAll();
